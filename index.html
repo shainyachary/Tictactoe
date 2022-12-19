@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tac Toe</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h2>tic tac toe</h2>
+    <div class="content">
+        <div class="form">
+            <label for="user1">Player-1 <input type="text" id="user1"></label>
+            <br>
+            <label for="user2">Player-2 <input type="text" id="user2"></label>
+            <br>
+            <input type="button" id="start" value="Start Game">
+        </div>
+        <div class="gameDiv">
+            <div class="container">
+                <div class="cell" style="--right:10px groove #00ff00; --bottom:10px groove #00ff00;" id="0"></div>
+                <div class="cell" style="--right:10px groove #00ff00; --bottom:10px groove #00ff00;" id="1"></div>
+                <div class="cell" style="--bottom:10px groove #00ff00;" id="2"></div>
+                <div class="cell" style="--right:10px groove #00ff00; --bottom:10px groove #00ff00;" id="3"></div>
+                <div class="cell" style="--right:10px groove #00ff00; --bottom:10px groove #00ff00;" id="4"></div>
+                <div class="cell" style="--bottom:10px groove #00ff00;" id="5"></div>
+                <div class="cell" style="--right:10px groove #00ff00;" id="6"></div>
+                <div class="cell" style="--right:10px groove #00ff00;" id="7"></div>
+                <div class="cell" id="8"></div>
+            </div>
+            <div class="result">
+                <div class="score">
+                    <table class="table">
+                        <tr>
+                            <th id="name1"></th>
+                            <th id="name2"></th>
+                        </tr>
+                        <tr>
+                            <td id="score1"></td>
+                            <td id="score2"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="btn">
+                    <input type="button" id="reset" value ="Reset">
+                    <input type="button" onclick="location.reload()" value ="Restart">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js script -->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
