@@ -22,7 +22,8 @@
 var flag = true;
 var values = [1,0,1,0,1,0,0,1,0];
 var player1,player2;
-var player1Count=player2Count = 0;
+var player1Count=0;
+var player2Count=0;
 document.querySelector('.container').addEventListener('click',function(e)
 {
     index = e.target.id;
@@ -50,17 +51,15 @@ document.querySelector('.container').addEventListener('click',function(e)
 // Winner Declaration
 function getWinner()
 {
-    if((values[0]==values[1] && values[1]== values[2]) ||(values[3]==values[4] && values[4]== values[5])||(values[6]==values[7] && values[7]== values[8]))
+    if((values[0]==values[1]&&values[1]==values[2])||(values[3]==values[4]&&values[4]==values[5])||(values[6]==values[7]&&values[7]==values[8]))
     {
-        // alert("Winner");
        getScore();
     }
-    else if((values[0]==values[3] && values[3]== values[6]) ||(values[1]==values[4] && values[4]== values[7])||(values[2]==values[5] && values[5]== values[8]))
+    else if((values[0]==values[3]&&values[3]==values[6])||(values[1]==values[4]&&values[4]==values[7])||(values[2]==values[5]&&values[5]==values[8]))
     {
-        // alert("Winner");
        getScore();
     }
-    else if((values[0]==values[4] && values[4]== values[8]) ||(values[2]==values[4] && values[4]== values[6]))
+    else if((values[0]==values[4]&&values[4]==values[8])||(values[2]==values[4]&&values[4]==values[6]))
     {
        getScore();
     }
@@ -87,7 +86,7 @@ document.querySelector('#start').addEventListener('click',function()
     player1 = document.querySelector("#user1").value;
     player2 = document.querySelector("#user2").value;
 
-    if(player1 == "" || player2 == "")
+    if(player1==""||player2=="")
     {
         alert("Please enter the Players Name");
     }
@@ -103,7 +102,7 @@ document.querySelector('#start').addEventListener('click',function()
 
 document.querySelector("#reset").addEventListener('click' ,function()
 {
-    var divs = document.querySelectorAll(".cell");//[div0, div1,div2]
+    var divs = document.querySelectorAll(".cell");
     for(let i=0;i<divs.length;i++)
     {
         divs[i].innerHTML ="";
