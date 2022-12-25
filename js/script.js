@@ -37,7 +37,7 @@ function getWinner()
     ];
     for(let i=0;i<winnerIndex.length;i++)
     {
-        [a, b, c] = winnerIndex[i];
+        let [a, b, c] = winnerIndex[i];
         if(values[a]==values[b] && values[b]==values[c])
         {
             getScore(a,b,c);
@@ -61,11 +61,11 @@ function getScore(x,y,z)
     }
     document.querySelector("#score1").innerHTML ="<strong>"+player1Count+"</strong>";
     document.querySelector("#score2").innerHTML ="<strong>"+player2Count+"</strong>";
+    document.getElementById(x).style.backgroundColor = '#444';
+    document.getElementById(y).style.backgroundColor = '#444';
+    document.getElementById(z).style.backgroundColor = '#444';
     document.getElementById('winner').style.display = 'block';
     values = [null,null,null,null,null,null,null,null,null];
-    console.log(x);
-    console.log(y);
-    console.log(z);
 }
 
 //Start Game Function
@@ -90,10 +90,11 @@ document.querySelector('#start').addEventListener('click',function()
 
 document.querySelector("#reset").addEventListener('click' ,function()
 {
-    var divs = document.querySelectorAll(".cell");
-    for(let i=0;i<divs.length;i++)
+    var cells = document.querySelectorAll(".cell");
+    for(let i=0;i<cells.length;i++)
     {
-        divs[i].innerHTML ="";
+        cells[i].innerHTML ="";
+        cells[i].style.backgroundColor = 'transparent';
     }
     values = [1,0,1,0,1,0,0,1,0];
     flag = true;
