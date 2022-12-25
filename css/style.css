@@ -19,8 +19,8 @@ h2
     text-align: center;
     text-transform: uppercase;
     font-family: 'Silkscreen', cursive;
-    color: #39FF14;
-    text-shadow: 2px 2px 20px #39FF14;
+    color: #00ff40;
+    text-shadow: 2px 2px 15px #00ff00;
 }
 #winner
 {
@@ -100,7 +100,7 @@ h2
 }
 .row .col span
 {
-    border: 2px solid #39FF14;
+    border: 2px solid #00ff00;
     padding: 1rem 0.5rem;
     text-align: center;
     color: #fff;
@@ -118,8 +118,8 @@ h2
 }
 .btn input
 {
-    background-color: #39FF14;
-    border: 1px solid #39FF14;
+    background-color: #00ff40;
+    border: 1px solid #00ff40;
     padding: 1rem;
     width: 100%;
     border-radius: 10px;
@@ -130,7 +130,7 @@ h2
 .btn input:hover
 {
     background-color: transparent;
-    color: #39FF14;
+    color: #00ff40;
     transition: 0.5s ease;
 }
 .container
@@ -143,8 +143,8 @@ h2
 }
 .cell
 {
-    border-bottom: 10px groove #39FF14;
-    border-right: 10px groove #39FF14;
+    border-bottom: 10px groove #00ff00;
+    border-right: 10px groove #00ff00;
     color: #fff;
     font-family: 'Finger Paint', cursive;
     font-size: 5rem;
@@ -168,7 +168,7 @@ h2
 {
     body
     {
-        padding: auto 1%;
+        margin: auto 2rem;
     }
     h2
     {
@@ -205,12 +205,12 @@ h2
     }
     .row
     {
-        min-width: 190px;
+        min-width: 200px;
         height: fit-content;
     }
     .btn 
     {
-        min-width: 190px;
+        min-width: 200px;
         margin-left: 2rem;
         margin-top: 0.1rem;
     }

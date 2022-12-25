@@ -61,10 +61,10 @@ function getScore(x,y,z)
     }
     document.querySelector("#score1").innerHTML ="<strong>"+player1Count+"</strong>";
     document.querySelector("#score2").innerHTML ="<strong>"+player2Count+"</strong>";
+    document.getElementById('winner').style.display = 'block';
     document.getElementById(x).style.backgroundColor = '#444';
     document.getElementById(y).style.backgroundColor = '#444';
     document.getElementById(z).style.backgroundColor = '#444';
-    document.getElementById('winner').style.display = 'block';
     values = [null,null,null,null,null,null,null,null,null];
 }
 
@@ -94,7 +94,7 @@ document.querySelector("#reset").addEventListener('click' ,function()
     for(let i=0;i<cells.length;i++)
     {
         cells[i].innerHTML ="";
-        cells[i].style.backgroundColor = 'transparent';
+        cells[i].style.backgroundColor ='transparent';
     }
     values = [1,0,1,0,1,0,0,1,0];
     flag = true;
