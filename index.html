@@ -14,6 +14,7 @@
 </head>
 <body>
     <h2>tic tac toe</h2>
+    <span id="winner"></span>
     <div class="content">
         <div class="form">
             <label for="user1">Player-1 <input type="text" id="user1"></label>
@@ -24,19 +25,19 @@
         </div>
         <div class="gameDiv">
             <div class="container">
-                <div class="cell" style="--right:10px groove #00ff00; --bottom:10px groove #00ff00;" id="0"></div>
-                <div class="cell" style="--right:10px groove #00ff00; --bottom:10px groove #00ff00;" id="1"></div>
-                <div class="cell" style="--bottom:10px groove #00ff00;" id="2"></div>
-                <div class="cell" style="--right:10px groove #00ff00; --bottom:10px groove #00ff00;" id="3"></div>
-                <div class="cell" style="--right:10px groove #00ff00; --bottom:10px groove #00ff00;" id="4"></div>
-                <div class="cell" style="--bottom:10px groove #00ff00;" id="5"></div>
-                <div class="cell" style="--right:10px groove #00ff00;" id="6"></div>
-                <div class="cell" style="--right:10px groove #00ff00;" id="7"></div>
+                <div class="cell" id="0"></div>
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
                 <div class="cell" id="8"></div>
             </div>
             <div class="result">
-                <div class="score">
-                    <table class="table">
+                <div class="row">
+                    <!-- <table class="table">
                         <tr>
                             <th id="name1"></th>
                             <th id="name2"></th>
@@ -45,7 +46,15 @@
                             <td id="score1"></td>
                             <td id="score2"></td>
                         </tr>
-                    </table>
+                    </table> -->
+                    <div class="col">
+                        <span id="name1"></span>
+                        <span id="name2"></span>
+                    </div>
+                    <div class="col">
+                        <span id="score1"></span>
+                        <span id="score2"></span>
+                    </div>
                 </div>
                 <div class="btn">
                     <input type="button" id="reset" value ="Reset">
