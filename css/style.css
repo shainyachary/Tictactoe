@@ -152,6 +152,10 @@ h2
     justify-content: center;
     align-items: center;
 }
+.cell:hover
+{
+    background-color: #444;
+}
 .cell:nth-child(3n)
 {
     border-right: none;

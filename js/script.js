@@ -65,6 +65,9 @@ function getScore(x,y,z)
     document.getElementById(x).style.backgroundColor = '#444';
     document.getElementById(y).style.backgroundColor = '#444';
     document.getElementById(z).style.backgroundColor = '#444';
+    document.getElementById(x).style.color = 'black';
+    document.getElementById(y).style.color = 'black';
+    document.getElementById(z).style.color = 'black';
     values = [null,null,null,null,null,null,null,null,null];
 }
 
