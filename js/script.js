@@ -98,6 +98,7 @@ document.querySelector("#reset").addEventListener('click' ,function()
     {
         cells[i].innerHTML ="";
         cells[i].style.backgroundColor ='transparent';
+        cells[i].style.color ='#fff';
     }
     values = [1,0,1,0,1,0,0,1,0];
     flag = true;
